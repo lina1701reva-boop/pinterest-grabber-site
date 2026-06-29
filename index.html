@@ -144,20 +144,21 @@
   .tut .video{aspect-ratio:16/10}
 
   /* ===== pricing ===== */
-  .price{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:46px;max-width:1040px;
+  .price{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:46px;max-width:1080px;
     margin-left:auto;margin-right:auto}
-  @media(max-width:1000px){.price{grid-template-columns:repeat(2,1fr);max-width:700px}}
-  @media(max-width:560px){.price{grid-template-columns:1fr;max-width:420px}}
-  .plan{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;
-    display:flex;flex-direction:column;gap:13px;position:relative}
+  @media(max-width:1080px){.price{grid-template-columns:repeat(3,1fr);max-width:760px}}
+  @media(max-width:720px){.price{grid-template-columns:repeat(2,1fr);max-width:520px}}
+  @media(max-width:500px){.price{grid-template-columns:1fr;max-width:380px}}
+  .plan{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;
+    display:flex;flex-direction:column;gap:12px;position:relative}
   .plan.pro{border-color:var(--red);box-shadow:0 0 0 1px var(--red),0 20px 60px -30px rgba(230,0,35,.6)}
   .tag{position:absolute;top:-12px;right:22px;font-size:11px;font-weight:800;letter-spacing:.05em;
     text-transform:uppercase;padding:5px 11px;border-radius:7px;background:var(--card2);color:var(--muted);
     border:1px solid var(--line)}
   .plan.pro .tag{background:var(--red);color:#fff;border-color:var(--red)}
   .plan h3{font-size:16px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em}
-  .plan .amt{font-size:42px;font-weight:800;letter-spacing:-.03em}
-  .plan .amt small{font-size:15px;color:var(--muted);font-weight:500}
+  .plan .amt{font-size:36px;font-weight:800;letter-spacing:-.03em}
+  .plan .amt small{font-size:14px;color:var(--muted);font-weight:500}
   .plan .per{font-size:13px;color:var(--muted);margin-top:-8px}
   .plan ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
   .plan li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px}
@@ -391,7 +392,7 @@
   <div class="wrap center">
     <span class="eyebrow"><span class="dot"></span> Pricing</span>
     <h2 style="margin-top:16px">Pick how long you need it.</h2>
-    <p class="lead">Every plan unlocks <b>everything</b> — full access, no feature locks.</p>
+    <p class="lead">Start free. Unlock <b>everything</b> from $4.99 — no feature locks on paid plans.</p>
     <div class="price" style="text-align:left">
       <div class="plan">
         <h3>Free</h3>
@@ -404,6 +405,19 @@
           <li>Photos &amp; videos</li>
         </ul>
         <a class="btn btn-ghost" href="#install">Add to Chrome</a>
+      </div>
+      <div class="plan">
+        <span class="tag">One-time</span>
+        <h3>24 hours</h3>
+        <div class="amt">$4.99 <small>one-time</small></div>
+        <div class="per">No subscription · timer starts at purchase</div>
+        <ul>
+          <li><b>Unlimited</b> pins &amp; boards</li>
+          <li>Whole profile &amp; sections</li>
+          <li>ZIP, folders &amp; PDF</li>
+          <li>Video (MP4) &amp; download queue</li>
+        </ul>
+        <a class="btn btn-ghost" href="#install">Get a Day Pass</a>
       </div>
       <div class="plan">
         <h3>2 weeks</h3>
@@ -444,7 +458,7 @@
         <a class="btn btn-red" href="#install">Get 1 year</a>
       </div>
     </div>
-    <p class="foot-note" style="margin-top:18px">Auto-renewing subscription — <b>cancel anytime</b>, no questions asked. Prices in USD.</p>
+    <p class="foot-note" style="margin-top:18px">The 24-hour Day Pass is a <b>one-time</b> purchase (no renewal). 2-week / monthly / yearly plans auto-renew — <b>cancel anytime</b>. Prices in USD.</p>
   </div>
 </section>
 
