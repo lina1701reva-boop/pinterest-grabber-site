@@ -15,7 +15,8 @@ Double-click `index.html` (opens in your browser).
 - **Videos** — every dashed box is a placeholder. Each has a label saying *what to record*
   (main demo, getting started, whole board, selected pins, PDF, private boards, queue).
   Replace a box with a real `<video controls>` or a YouTube `<iframe>` when ready.
-- **Pricing** — `$19` / `$0` and the "100 pins per board" limit are placeholders. Set your real plan.
+- **Pricing** — three plans: 2 weeks `$6`, 1 month `$9`, 1 year `$89` (full access on every plan). The
+  "Get …" buttons point at `#install` — replace with your real checkout links (Gumroad / Lemon Squeezy / etc.).
 - **Brand name** — it's "PinGrab" everywhere. Find/replace if you pick another name.
 - **Contact** — `you@example.com` in the footer.
 - **Privacy / Terms** — add real pages and point the footer links at them (required for the Chrome Web Store).
