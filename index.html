@@ -144,11 +144,12 @@
   .tut .video{aspect-ratio:16/10}
 
   /* ===== pricing ===== */
-  .price{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:46px;max-width:940px;
+  .price{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:46px;max-width:1040px;
     margin-left:auto;margin-right:auto}
-  @media(max-width:820px){.price{grid-template-columns:1fr;max-width:420px}}
-  .plan{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px;
-    display:flex;flex-direction:column;gap:14px;position:relative}
+  @media(max-width:1000px){.price{grid-template-columns:repeat(2,1fr);max-width:700px}}
+  @media(max-width:560px){.price{grid-template-columns:1fr;max-width:420px}}
+  .plan{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;
+    display:flex;flex-direction:column;gap:13px;position:relative}
   .plan.pro{border-color:var(--red);box-shadow:0 0 0 1px var(--red),0 20px 60px -30px rgba(230,0,35,.6)}
   .tag{position:absolute;top:-12px;right:22px;font-size:11px;font-weight:800;letter-spacing:.05em;
     text-transform:uppercase;padding:5px 11px;border-radius:7px;background:var(--card2);color:var(--muted);
@@ -393,11 +394,23 @@
     <p class="lead">Every plan unlocks <b>everything</b> — full access, no feature locks.</p>
     <div class="price" style="text-align:left">
       <div class="plan">
+        <h3>Free</h3>
+        <div class="amt">$0</div>
+        <div class="per">No card · start instantly</div>
+        <ul>
+          <li>20 pin saves / month</li>
+          <li>2 board downloads / month</li>
+          <li>HD quality</li>
+          <li>Photos &amp; videos</li>
+        </ul>
+        <a class="btn btn-ghost" href="#install">Add to Chrome</a>
+      </div>
+      <div class="plan">
         <h3>2 weeks</h3>
-        <div class="amt">$6 <small>/ 2 weeks</small></div>
+        <div class="amt">$6.99 <small>/ 2 weeks</small></div>
         <div class="per">Renews every 2 weeks · cancel anytime</div>
         <ul>
-          <li>Unlimited pins &amp; boards</li>
+          <li><b>Unlimited</b> pins &amp; boards</li>
           <li>Whole profile &amp; sections</li>
           <li>ZIP, folders &amp; PDF</li>
           <li>Video (MP4) &amp; download queue</li>
@@ -407,10 +420,10 @@
       <div class="plan">
         <span class="tag">Popular</span>
         <h3>1 month</h3>
-        <div class="amt">$9 <small>/ month</small></div>
+        <div class="amt">$9.99 <small>/ month</small></div>
         <div class="per">Billed monthly · cancel anytime</div>
         <ul>
-          <li>Unlimited pins &amp; boards</li>
+          <li><b>Unlimited</b> pins &amp; boards</li>
           <li>Whole profile &amp; sections</li>
           <li>ZIP, folders &amp; PDF</li>
           <li>Video (MP4) &amp; download queue</li>
@@ -420,10 +433,10 @@
       <div class="plan pro">
         <span class="tag">Best value</span>
         <h3>1 year</h3>
-        <div class="amt">$89 <small>/ year</small></div>
-        <div class="per">≈ $7.40 / mo · billed yearly · save ~18%</div>
+        <div class="amt">$79 <small>/ year</small></div>
+        <div class="per">≈ $6.58 / mo · billed yearly · save ~34%</div>
         <ul>
-          <li>Unlimited pins &amp; boards</li>
+          <li><b>Unlimited</b> pins &amp; boards</li>
           <li>Whole profile &amp; sections</li>
           <li>ZIP, folders &amp; PDF</li>
           <li>Video (MP4) &amp; download queue</li>
