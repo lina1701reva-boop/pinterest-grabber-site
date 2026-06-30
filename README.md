@@ -1,4 +1,4 @@
-# PinGrab — landing page
+# Revapin — landing page
 
 Standalone one-file landing page for the Pinterest Grabber extension. Dark, Pinterest-style,
 black background, red accent. No build step — it's a single `index.html`.
@@ -17,7 +17,7 @@ Double-click `index.html` (opens in your browser).
   Replace a box with a real `<video controls>` or a YouTube `<iframe>` when ready.
 - **Pricing** — three plans: 2 weeks `$6`, 1 month `$9`, 1 year `$89` (full access on every plan). The
   "Get …" buttons point at `#install` — replace with your real checkout links (Gumroad / Lemon Squeezy / etc.).
-- **Brand name** — it's "PinGrab" everywhere. Find/replace if you pick another name.
+- **Brand name** — it's "Revapin" everywhere. Find/replace if you pick another name.
 - **Contact** — `you@example.com` in the footer.
 - **Privacy / Terms** — add real pages and point the footer links at them (required for the Chrome Web Store).
 - Remove any "placeholder" notes once finalized.
