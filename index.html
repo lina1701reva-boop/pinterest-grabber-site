@@ -121,8 +121,7 @@
   .f{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;
     transition:border-color .15s ease,transform .15s ease,background .15s ease}
   .f:hover{border-color:#33333c;transform:translateY(-2px);background:var(--card2)}
-  .f .ic{width:40px;height:40px;border-radius:11px;background:rgba(230,0,35,.12);
-    border:1px solid rgba(230,0,35,.25);display:grid;place-items:center;margin-bottom:14px;font-size:20px}
+  .f .ic{display:grid;place-items:center;margin-bottom:12px;font-size:26px}
   .f h3{margin-bottom:6px}
   .f p{font-size:14px}
 
@@ -208,7 +207,6 @@
     transition:border-color .15s ease,background .15s ease,transform .12s ease}
   .theme-btn:hover{border-color:#3a3a44;transform:translateY(-1px)}
   .theme-btn svg{width:18px;height:18px;fill:currentColor}
-  .theme-btn .i-moon{display:none}
   /* language switcher */
   .lang{position:relative}
   .lang-btn{display:inline-flex;align-items:center;gap:6px;height:38px;padding:0 12px;border-radius:19px;
@@ -242,8 +240,29 @@
   [data-theme="light"] .final{background:linear-gradient(180deg,#fff1f2,#ffffff)}
   [data-theme="light"] .f,[data-theme="light"] .step,
   [data-theme="light"] .plan,[data-theme="light"] details{box-shadow:0 2px 10px rgba(20,20,30,.05)}
-  [data-theme="light"] .theme-btn .i-sun{display:none}
-  [data-theme="light"] .theme-btn .i-moon{display:block}
+
+  /* ===== PINK THEME ===== */
+  :root[data-theme="pink"]{
+    --bg:#fff5f9; --bg2:#ffeaf3; --card:#ffffff; --card2:#ffe9f2;
+    --line:#f6d3e4; --text:#2a1622; --muted:#9c6981;
+    --red:#ff2e88; --red-d:#e01b72;
+  }
+  [data-theme="pink"] header.nav{background:rgba(255,245,249,.85)}
+  [data-theme="pink"] .pin{background:linear-gradient(160deg,#ffdcec,#fff0f6)}
+  [data-theme="pink"] .hero-grid{opacity:.6}
+  [data-theme="pink"] .video{background:radial-gradient(120% 120% at 50% 0,#ffe7f1,#ffd9e9);border-color:#f3c4da}
+  [data-theme="pink"] .video .vlabel b{color:#7a2f53}
+  [data-theme="pink"] .final{background:linear-gradient(180deg,#ffe3f0,#ffffff)}
+  [data-theme="pink"] .f,[data-theme="pink"] .step,
+  [data-theme="pink"] .plan,[data-theme="pink"] details{box-shadow:0 2px 12px rgba(220,40,120,.08)}
+
+  /* theme-toggle icon shows the CURRENT theme: moon=dark, sun=light, heart=pink */
+  .theme-btn svg{display:none}
+  .theme-btn .i-moon{display:block}
+  [data-theme="light"] .theme-btn .i-moon{display:none}
+  [data-theme="light"] .theme-btn .i-sun{display:block}
+  [data-theme="pink"] .theme-btn .i-moon{display:none}
+  [data-theme="pink"] .theme-btn .i-heart{display:block}
 </style>
 </head>
 <body>
@@ -261,6 +280,7 @@
       <a href="#tutorials" data-i18n="nav_videos">Videos</a>
       <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
       <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="privacy.html" data-i18n="nav_privacy">Privacy</a>
     </nav>
     <div class="nav-right">
       <div class="lang" id="lang">
@@ -269,9 +289,10 @@
         </button>
         <div class="lang-menu" id="langMenu" hidden></div>
       </div>
-      <button id="themeToggle" class="theme-btn" type="button" aria-label="Switch light / dark" title="Light / dark">
+      <button id="themeToggle" class="theme-btn" type="button" aria-label="Switch theme" title="Theme: dark → light → pink">
         <svg class="i-sun" viewBox="0 0 24 24"><path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0-5h0v3m0 14v3m9-10h-3M5 12H2m15.5-6.5l-2 2m-7 7l-2 2m11 0l-2-2m-7-7l-2-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         <svg class="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+        <svg class="i-heart" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 8.9 2 5.5 5.2 5.5c1.9 0 3.2 1.1 3.8 2.1.6-1 1.9-2.1 3.8-2.1 3.2 0 4.6 3.4 3.2 6.3C19.5 16.4 12 21 12 21z"/></svg>
       </button>
       <a class="btn btn-red" href="#install">
         <svg viewBox="0 0 24 24" fill="#fff"><path d="M11 3h2v9.6l3.3-3.3 1.4 1.4L12 16.4 6.3 10.7l1.4-1.4L11 12.6V3zM5 18h14v2H5z"/></svg>
@@ -530,9 +551,10 @@
         Revapin
       </a>
       <div class="foot-links">
-        <a href="#privacy">Privacy</a>
-        <a href="#terms">Terms</a>
-        <a href="mailto:you@example.com">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="refund.html">Refund Policy</a>
+        <a href="mailto:hello@revapin.com">Contact</a>
       </div>
     </div>
     <p class="foot-note">Not affiliated with, sponsored by, or endorsed by Pinterest. Pinterest is a trademark of Pinterest, Inc. © 2026 Revapin.</p>
@@ -540,15 +562,21 @@
 </footer>
 
 <script>
-  // Light / dark theme toggle (default: dark). Remembers the choice.
+  // Theme toggle: cycles dark → light → pink (default: dark). Remembers the choice.
   (function () {
     var root = document.documentElement
-    if (localStorage.getItem('pg-theme') === 'light') root.setAttribute('data-theme', 'light')
+    var THEMES = ['dark', 'light', 'pink']
+    function apply(t) {
+      if (t === 'dark') root.removeAttribute('data-theme')
+      else root.setAttribute('data-theme', t)
+      try { localStorage.setItem('pg-theme', t) } catch (e) {}
+    }
+    var saved = localStorage.getItem('pg-theme')
+    apply(THEMES.indexOf(saved) >= 0 ? saved : 'dark')
     var btn = document.getElementById('themeToggle')
     if (btn) btn.addEventListener('click', function () {
-      var isLight = root.getAttribute('data-theme') === 'light'
-      if (isLight) { root.removeAttribute('data-theme'); localStorage.setItem('pg-theme', 'dark') }
-      else { root.setAttribute('data-theme', 'light'); localStorage.setItem('pg-theme', 'light') }
+      var i = THEMES.indexOf(localStorage.getItem('pg-theme'))
+      apply(THEMES[(i + 1) % THEMES.length] || 'light')
     })
   })()
 
