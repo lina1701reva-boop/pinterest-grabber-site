@@ -191,7 +191,7 @@
   .plan li.off{color:#6b6b73}.plan li.off::before{content:"–";color:#6b6b73}
   /* pricing emphasis: free = neutral, paid = highlighted, yearly = strongest */
   .plan.paid{border-color:rgba(230,0,35,.42);background:linear-gradient(180deg,rgba(230,0,35,.05),transparent)}
-  .plan.paid .tag{background:rgba(230,0,35,.14);color:var(--red);border-color:rgba(230,0,35,.3)}
+  .plan.paid .tag{background:var(--red);color:#fff;border-color:var(--red)}
   .plan.pro{border-color:var(--red);background:linear-gradient(180deg,rgba(230,0,35,.12),transparent);
     box-shadow:0 0 0 2px var(--red),0 26px 70px -24px rgba(230,0,35,.78)}
   .spass{border-color:rgba(230,0,35,.42);background:linear-gradient(180deg,rgba(230,0,35,.05),transparent)}
@@ -437,10 +437,23 @@
         </ul>
         <a class="btn btn-ghost" href="#install" data-i18n="btn_free">Add to Chrome</a>
       </div>
+      <div class="plan pro">
+        <span class="tag" data-i18n="tag_best">Best value</span>
+        <h3 data-i18n="plan_1y">1 year</h3>
+        <div class="amt">$69 <small data-i18n="lbl_1y">/ year</small></div>
+        <div class="per" data-i18n="per_1y">≈ $5.75 / mo · billed yearly · save ~36%</div>
+        <ul>
+          <li data-i18n="feat_pins"><b>Unlimited</b> pins &amp; boards</li>
+          <li data-i18n="feat_profile">Whole profile &amp; sections</li>
+          <li data-i18n="feat_zip">ZIP, folders &amp; PDF</li>
+          <li data-i18n="feat_video">Video (MP4) &amp; download queue</li>
+        </ul>
+        <a class="btn btn-red" href="#install" data-i18n="btn_1y">Get 1 year</a>
+      </div>
       <div class="plan paid">
         <span class="tag" data-i18n="tag_popular">Popular</span>
         <h3 data-i18n="plan_1m">1 month</h3>
-        <div class="amt">$9.99 <small data-i18n="lbl_1m">/ month</small></div>
+        <div class="amt">$8.99 <small data-i18n="lbl_1m">/ month</small></div>
         <div class="per" data-i18n="per_1m">Billed monthly · cancel anytime</div>
         <ul>
           <li data-i18n="feat_pins"><b>Unlimited</b> pins &amp; boards</li>
@@ -449,19 +462,6 @@
           <li data-i18n="feat_video">Video (MP4) &amp; download queue</li>
         </ul>
         <a class="btn btn-ghost" href="#install" data-i18n="btn_1m">Get 1 month</a>
-      </div>
-      <div class="plan pro">
-        <span class="tag" data-i18n="tag_best">Best value</span>
-        <h3 data-i18n="plan_1y">1 year</h3>
-        <div class="amt">$79 <small data-i18n="lbl_1y">/ year</small></div>
-        <div class="per" data-i18n="per_1y">≈ $6.58 / mo · billed yearly · save ~34%</div>
-        <ul>
-          <li data-i18n="feat_pins"><b>Unlimited</b> pins &amp; boards</li>
-          <li data-i18n="feat_profile">Whole profile &amp; sections</li>
-          <li data-i18n="feat_zip">ZIP, folders &amp; PDF</li>
-          <li data-i18n="feat_video">Video (MP4) &amp; download queue</li>
-        </ul>
-        <a class="btn btn-red" href="#install" data-i18n="btn_1y">Get 1 year</a>
       </div>
     </div>
     <p class="spass-lead" data-i18n="spass_lead">Just need it for a quick job? Grab a short pass:</p>
