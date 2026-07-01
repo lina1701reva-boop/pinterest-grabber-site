@@ -43,9 +43,10 @@ figcaption{color:var(--muted);font-size:13px;margin-top:10px}
 .d-arrow{color:var(--muted)}
 .d-chips{display:inline-flex;gap:7px;flex-wrap:wrap;justify-content:center}
 .d-chips span{background:rgba(230,0,35,.1);color:var(--red);border-radius:8px;padding:7px 11px;font-size:13px;font-weight:600}
-.chrome-btn{display:flex;width:fit-content;align-items:center;gap:9px;background:var(--red);color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:13px 22px;border-radius:30px;margin:10px auto 0}
+.chrome-btn{display:inline-flex;align-items:center;gap:9px;background:var(--red);color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:13px 22px;border-radius:30px}
 .chrome-btn:hover{background:#c8001f}
 .chrome-btn svg{width:18px;height:18px}
+p:has(> .chrome-btn){text-align:center;margin-top:10px}
 .note{color:var(--muted);font-size:14px}
 footer{border-top:1px solid var(--line);margin-top:46px;padding:28px 0;color:var(--muted);font-size:13.5px;text-align:center}
 footer a{color:var(--muted)}
