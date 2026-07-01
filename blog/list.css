@@ -1,0 +1,24 @@
+.eyebrow{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;letter-spacing:.04em;
+  text-transform:uppercase;color:var(--red);background:rgba(230,0,35,.10);padding:6px 12px;border-radius:30px}
+.blog-h1{font-size:36px;letter-spacing:-.03em;margin:16px 0 6px}
+.sub{color:var(--muted);font-size:18px;margin:0 0 30px}
+.posts{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+@media (max-width:640px){ .posts{grid-template-columns:1fr} }
+.post-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;
+  text-decoration:none;color:var(--text);display:block;transition:border-color .15s ease,transform .12s ease}
+.post-card:hover{border-color:var(--red);transform:translateY(-2px)}
+.post-card .meta{color:var(--muted);font-size:12.5px;margin-bottom:8px}
+.tag{display:inline-block;background:rgba(230,0,35,.10);color:var(--red);font-weight:700;font-size:11px;
+  letter-spacing:.03em;text-transform:uppercase;padding:3px 9px;border-radius:20px;margin-right:9px;vertical-align:middle}
+.post-card h2{font-size:18.5px;margin:0 0 7px;letter-spacing:-.01em;line-height:1.25}
+.post-card p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.5}
+.cat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media (max-width:700px){ .cat-grid{grid-template-columns:1fr} }
+.cat-card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;
+  text-decoration:none;color:var(--text);display:block;transition:border-color .15s ease,transform .12s ease}
+.cat-card:hover{border-color:var(--red);transform:translateY(-3px)}
+.cat-card img{width:100%;height:150px;object-fit:cover;display:block;border:0;border-radius:0;box-shadow:none}
+.cat-card .body{padding:18px 20px}
+.cat-card h2{font-size:20px;margin:0 0 5px;letter-spacing:-.01em}
+.cat-card p{margin:0 0 9px;color:var(--muted);font-size:14px;line-height:1.5}
+.cat-card .count{color:var(--red);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.04em}

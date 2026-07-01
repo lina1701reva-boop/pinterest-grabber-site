@@ -6,191 +6,99 @@
 <link rel="icon" type="image/png" href="/favicon-32.png" />
 <link rel="apple-touch-icon" href="/favicon-128.png" />
 <title>Blog — Revapin</title>
-<meta name="description" content="Practical guides and tips for getting more out of Pinterest — saving boards, building moodboards, and working faster." />
-<style>
-  :root{
-    --bg:#0c0c0f; --bg2:#141417; --card:#16161a; --card2:#1d1d22;
-    --line:#26262c; --text:#f3f3f5; --muted:#9a9aa3; --red:#e60023; --maxw:900px;
-  }
-  :root[data-theme="light"]{
-    --bg:#ffffff; --bg2:#f6f6f7; --card:#ffffff; --card2:#f3f3f5;
-    --line:#e7e7ea; --text:#15151a; --muted:#5e5e68;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--text);
-    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-    line-height:1.6;font-size:16px}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
-  header.nav{position:sticky;top:0;background:rgba(12,12,15,.8);backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--line);z-index:10}
-  [data-theme="light"] header.nav{background:rgba(255,255,255,.82)}
-  .nav-in{display:flex;align-items:center;justify-content:space-between;height:62px}
-  .logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px;color:var(--text);text-decoration:none;letter-spacing:-.02em}
-  .logo .mark{width:30px;height:30px}
-  .back{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
-  .back:hover{color:var(--text)}
-  main{padding:48px 0 64px}
-  .eyebrow{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;letter-spacing:.04em;
-    text-transform:uppercase;color:var(--red);background:rgba(230,0,35,.10);padding:6px 12px;border-radius:30px}
-  h1{font-size:36px;letter-spacing:-.03em;margin:16px 0 6px}
-  .sub{color:var(--muted);font-size:18px;margin:0 0 20px}
-  .group{margin-top:44px}
-  .group-title{font-size:23px;letter-spacing:-.02em;margin:0 0 4px}
-  .group-sub{color:var(--muted);font-size:14.5px;margin:0 0 18px}
-  .posts{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-  @media (max-width:640px){ .posts{grid-template-columns:1fr} }
-  .post-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;
-    text-decoration:none;color:var(--text);display:block;transition:border-color .15s ease,transform .12s ease}
-  .post-card:hover{border-color:var(--red);transform:translateY(-2px)}
-  .post-card .meta{color:var(--muted);font-size:12.5px;margin-bottom:8px}
-  .tag{display:inline-block;background:rgba(230,0,35,.10);color:var(--red);font-weight:700;font-size:11px;
-    letter-spacing:.03em;text-transform:uppercase;padding:3px 9px;border-radius:20px;margin-right:9px;vertical-align:middle}
-  .post-card h2{font-size:18.5px;margin:0 0 7px;letter-spacing:-.01em;line-height:1.25}
-  .post-card p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.5}
-  footer{border-top:1px solid var(--line);margin-top:50px;padding:28px 0;color:var(--muted);font-size:13.5px;text-align:center}
-  footer a{color:var(--muted)}
-</style>
+<meta name="description" content="Practical guides and tips for getting more out of Pinterest — pick a topic to dive into." />
+<link rel="stylesheet" href="/blog/style.css" />
+<link rel="stylesheet" href="/blog/list.css" />
 </head>
 <body>
 <header class="nav">
   <div class="wrap nav-in">
-    <a class="logo" href="/">
-      <img class="mark" src="/logo.png" alt="Revapin" />
-      Revapin
-    </a>
+    <a class="logo" href="/"><img class="mark" src="/logo.png" alt="Revapin" />Revapin</a>
     <a class="back" href="/">← Back to Revapin</a>
   </div>
 </header>
-
 <main>
   <div class="wrap">
     <span class="eyebrow"><span>●</span> Blog</span>
-    <h1>The Revapin Blog</h1>
-    <p class="sub">Practical guides and tips for getting more out of Pinterest — saving boards, building moodboards, and working faster.</p>
-
-    <section class="group">
-      <h2 class="group-title">Pinterest Basics</h2>
-      <p class="group-sub">New to Pinterest, or brushing up on the fundamentals.</p>
-      <div class="posts">
-        <a class="post-card" href="/blog/what-is-pinterest-how-it-works">
-          <div class="meta"><span class="tag">Basics</span>Guide · July 1, 2026</div>
-          <h2>What Is Pinterest and How Does It Work? A Beginner's Guide</h2>
-          <p>Pins, boards, the feed, and search — a plain-English guide to how Pinterest actually works.</p>
+    <h1 class="blog-h1">The Revapin Blog</h1>
+    <p class="sub">Practical guides and tips for getting more out of Pinterest. Pick a topic to dive in.</p>
+    <div class="cat-grid">
+        <a class="cat-card" href="/blog/category/pinterest-basics">
+          <img src="/blog/img/board-c.jpg" alt="Pinterest Basics" />
+          <div class="body">
+            <h2>Pinterest Basics</h2>
+            <p>New to Pinterest, or brushing up on the fundamentals.</p>
+            <span class="count">6 articles</span>
+          </div>
         </a>
-        <a class="post-card" href="/blog/best-pinterest-pin-image-sizes">
-          <div class="meta"><span class="tag">Pin sizes</span>Guide · July 1, 2026</div>
-          <h2>Best Image Sizes and Dimensions for Pinterest Pins (2026)</h2>
-          <p>The 2:3 standard, when to go square or video, and why vertical pins win the feed.</p>
+        <a class="cat-card" href="/blog/category/creating-pins">
+          <img src="/blog/img/board-neutral.jpg" alt="Creating Pins & Boards" />
+          <div class="body">
+            <h2>Creating Pins &amp; Boards</h2>
+            <p>Making pins and boards that work — from your first board to video and idea pins.</p>
+            <span class="count">4 articles</span>
+          </div>
         </a>
-      </div>
-    </section>
-
-    <section class="group">
-      <h2 class="group-title">Download &amp; Save from Pinterest</h2>
-      <p class="group-sub">Getting boards, pins, and videos off Pinterest and onto your computer.</p>
-      <div class="posts">
-        <a class="post-card" href="/blog/how-to-download-pinterest-boards-pins-videos">
-          <div class="meta"><span class="tag">Boards</span>Guide · July 1, 2026</div>
-          <h2>How to Download Pinterest Boards, Pins &amp; Videos (2026 Guide)</h2>
-          <p>Every way to get images and videos off Pinterest, from the slow manual method to whole boards in one click.</p>
+        <a class="cat-card" href="/blog/category/download-save">
+          <img src="/blog/img/files-folder.jpg" alt="Download & Save from Pinterest" />
+          <div class="body">
+            <h2>Download &amp; Save from Pinterest</h2>
+            <p>Getting boards, pins, and videos off Pinterest and onto your computer.</p>
+            <span class="count">6 articles</span>
+          </div>
         </a>
-        <a class="post-card" href="/blog/how-to-save-pinterest-videos">
-          <div class="meta"><span class="tag">Videos</span>Guide · July 1, 2026</div>
-          <h2>How to Save Pinterest Videos to Your Computer</h2>
-          <p>Pinterest has no download button for video pins. The methods that get you a clean MP4, and the ones that don't.</p>
+        <a class="cat-card" href="/blog/category/organize-search">
+          <img src="/blog/img/board-a.jpg" alt="Organize & Search Your Boards" />
+          <div class="body">
+            <h2>Organize &amp; Search Your Boards</h2>
+            <p>Keeping Pinterest tidy and finding what you need faster.</p>
+            <span class="count">3 articles</span>
+          </div>
         </a>
-        <a class="post-card" href="/blog/how-to-save-pinterest-images-full-quality">
-          <div class="meta"><span class="tag">Images</span>Guide · July 1, 2026</div>
-          <h2>How to Save Pinterest Images in Full Quality</h2>
-          <p>The images you save off Pinterest are usually shrunk previews. How to get the full-resolution original.</p>
+        <a class="cat-card" href="/blog/category/grow">
+          <img src="/blog/img/board-selected.jpg" alt="Grow on Pinterest" />
+          <div class="body">
+            <h2>Grow on Pinterest</h2>
+            <p>Getting found: the algorithm, SEO, followers, and traffic.</p>
+            <span class="count">5 articles</span>
+          </div>
         </a>
-        <a class="post-card" href="/blog/how-to-download-a-whole-pinterest-profile">
-          <div class="meta"><span class="tag">Profiles</span>Guide · July 1, 2026</div>
-          <h2>How to Download a Whole Pinterest Profile</h2>
-          <p>Want every board from a profile, not one at a time? Downloading an entire account with the structure intact.</p>
+        <a class="cat-card" href="/blog/category/scheduling">
+          <img src="/blog/img/saving-progress.jpg" alt="Scheduling & Consistency" />
+          <div class="body">
+            <h2>Scheduling &amp; Consistency</h2>
+            <p>Staying active on Pinterest without living in the app.</p>
+            <span class="count">3 articles</span>
+          </div>
         </a>
-        <a class="post-card" href="/blog/download-private-secret-pinterest-boards">
-          <div class="meta"><span class="tag">Private boards</span>Guide · July 1, 2026</div>
-          <h2>Can You Download Private or Secret Pinterest Boards?</h2>
-          <p>Yes for your own secret boards and any shared with you. Why it works, and what you can't reach.</p>
+        <a class="cat-card" href="/blog/category/business">
+          <img src="/blog/img/download-formats.png" alt="Pinterest for Business" />
+          <div class="body">
+            <h2>Pinterest for Business</h2>
+            <p>Turning Pinterest into a channel for shops, sellers, and blogs.</p>
+            <span class="count">4 articles</span>
+          </div>
         </a>
-        <a class="post-card" href="/blog/how-to-back-up-pinterest-boards">
-          <div class="meta"><span class="tag">Backup</span>Guide · July 1, 2026</div>
-          <h2>How to Back Up Your Pinterest Boards</h2>
-          <p>Pins aren't permanent. Making a local copy before an account or a deleted pin takes them with it.</p>
+        <a class="cat-card" href="/blog/category/moodboards-workflow">
+          <img src="/blog/img/pdf-result.jpg" alt="Moodboards, Workflow & Good Practice" />
+          <div class="body">
+            <h2>Moodboards, Workflow &amp; Good Practice</h2>
+            <p>Using Pinterest for real creative work, and staying on the right side of things.</p>
+            <span class="count">3 articles</span>
+          </div>
         </a>
-      </div>
-    </section>
-
-    <section class="group">
-      <h2 class="group-title">Organize &amp; Search Your Boards</h2>
-      <p class="group-sub">Keeping Pinterest tidy and finding what you need faster.</p>
-      <div class="posts">
-        <a class="post-card" href="/blog/pinterest-boards-vs-sections">
-          <div class="meta"><span class="tag">Organizing</span>Guide · July 1, 2026</div>
-          <h2>Pinterest Boards vs Sections: How to Organize Properly</h2>
-          <p>The difference between boards and sections, when to use each, and keeping a growing board usable.</p>
+        <a class="cat-card" href="/blog/category/using-revapin">
+          <img src="/blog/img/toolbar-on-board.jpg" alt="Using Revapin" />
+          <div class="body">
+            <h2>Using Revapin</h2>
+            <p>Getting set up and getting the most out of the extension.</p>
+            <span class="count">2 articles</span>
+          </div>
         </a>
-        <a class="post-card" href="/blog/how-to-clean-up-messy-pinterest-boards">
-          <div class="meta"><span class="tag">Cleanup</span>Guide · July 1, 2026</div>
-          <h2>How to Clean Up Messy Pinterest Boards</h2>
-          <p>A board past a few hundred pins is hard to use. Splitting into sections, cutting dead weight, backing up first.</p>
-        </a>
-        <a class="post-card" href="/blog/pinterest-search-tips">
-          <div class="meta"><span class="tag">Search</span>Guide · July 1, 2026</div>
-          <h2>Pinterest Search Tips: Find Better References Faster</h2>
-          <p>Getting past the obvious results — filters, search within boards, and the More ideas button.</p>
-        </a>
-      </div>
-    </section>
-
-    <section class="group">
-      <h2 class="group-title">Moodboards, Workflow &amp; Good Practice</h2>
-      <p class="group-sub">Using Pinterest for real creative work, and staying on the right side of things.</p>
-      <div class="posts">
-        <a class="post-card" href="/blog/pinterest-board-to-pdf-moodboard">
-          <div class="meta"><span class="tag">Moodboards</span>Guide · July 1, 2026</div>
-          <h2>How to Turn a Pinterest Board into a PDF Moodboard</h2>
-          <p>Clients want a moodboard, not a Pinterest link. Turning a board into one shareable PDF you can send.</p>
-        </a>
-        <a class="post-card" href="/blog/pinterest-tips-for-designers-and-creators">
-          <div class="meta"><span class="tag">Workflow</span>Guide · July 1, 2026</div>
-          <h2>Pinterest Workflow Tips for Designers, Illustrators, and Content Creators</h2>
-          <p>Keeping Pinterest useful for real work: navigable boards, faster references, moodboards you can hand to a client.</p>
-        </a>
-        <a class="post-card" href="/blog/is-it-legal-to-download-pinterest-images">
-          <div class="meta"><span class="tag">Legal</span>Guide · July 1, 2026</div>
-          <h2>Is It Legal to Download Pinterest Images?</h2>
-          <p>Saving for personal reference is generally fine. What matters legally is what you do with the file afterward.</p>
-        </a>
-      </div>
-    </section>
-
-    <section class="group">
-      <h2 class="group-title">Using Revapin</h2>
-      <p class="group-sub">Getting set up and getting the most out of the extension.</p>
-      <div class="posts">
-        <a class="post-card" href="/blog/how-to-install-revapin">
-          <div class="meta"><span class="tag">Setup</span>Guide · July 1, 2026</div>
-          <h2>How to Install Revapin: A 2-Minute Setup Guide</h2>
-          <p>The whole setup, start to finish, and how to get the toolbar showing on Pinterest.</p>
-        </a>
-        <a class="post-card" href="/blog/revapin-vs-screenshotting-pinterest">
-          <div class="meta"><span class="tag">Quality</span>Guide · July 1, 2026</div>
-          <h2>Revapin vs Screenshotting Pinterest: Why Quality Matters</h2>
-          <p>A screenshot grabs a shrunk preview. Downloading the original file, and when each one is fine.</p>
-        </a>
-      </div>
-    </section>
+    </div>
   </div>
 </main>
-
-<footer>
-  <div class="wrap">© 2026 Reva Creative LLC · <a href="/">Home</a> · <a href="/blog">Blog</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/refund">Refund</a></div>
-</footer>
-
-<script>
-  (function(){ var t = localStorage.getItem('pg-theme'); if (t === 'light') document.documentElement.setAttribute('data-theme', t) })()
-</script>
+<footer><div class="wrap">© 2026 Reva Creative LLC · <a href="/">Home</a> · <a href="/blog">Blog</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/refund">Refund</a></div></footer>
+<script>(function(){ var t = localStorage.getItem('pg-theme'); if (t === 'light') document.documentElement.setAttribute('data-theme', t) })()</script>
 </body>
 </html>
