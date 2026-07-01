@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="/favicon-32.png" />
+<link rel="apple-touch-icon" href="/favicon-128.png" />
+<title>How to Save Pinterest Images in Full Quality — Revapin</title>
+<meta name="description" content="The images you save off Pinterest are usually shrunk previews. How to get the full-resolution original, by hand or with an extension." />
+<link rel="stylesheet" href="/blog/style.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="/">
+      <img class="mark" src="/logo.png" alt="Revapin" />
+      Revapin
+    </a>
+    <a class="back" href="/blog">← All articles</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="meta">Guide · July 1, 2026 · 5 min read</p>
+    <h1>How to Save Pinterest Images in Full Quality</h1>
+
+    <p class="lead">The picture you save from Pinterest is usually smaller than the one that was uploaded. Pinterest keeps several sizes of every image and shows a compressed preview in the feed, so a right-click save often gives you that preview instead of the full file. Getting the original takes a couple of extra steps, and it's worth doing whenever you plan to print or zoom in.</p>
+
+    <h2>Why your saved pins look soft</h2>
+    <p>Every pin exists at a few resolutions on Pinterest's servers. The one you see while scrolling is deliberately small so the page loads fast. When you right-click and choose Save image as, you get whatever size was on screen, which on a busy board can be a few hundred pixels wide. It looks fine in the browser, then falls apart the moment you open it at full size or drop it into a layout.</p>
+
+    <h2>Open the pin before you save</h2>
+    <p>Clicking into a pin opens its detail page, where Pinterest usually loads a larger version than the board thumbnail. Saving from there is a step up, though it still isn't guaranteed to be the original the creator uploaded. For a quick save it's usually good enough. For anything going to print, it often isn't.</p>
+
+    <h2>The URL trick, and its limits</h2>
+    <p>Pinterest image links carry the size right in the path. You'll see a segment like 236x, 564x, or 736x in the address:</p>
+    <ul>
+      <li>236x — the small feed thumbnail;</li>
+      <li>564x or 736x — the larger detail views;</li>
+      <li>originals — the full uploaded file, when it's available.</li>
+    </ul>
+    <p>Swapping that segment for originals sometimes loads the full-resolution image, which you can then save. It's fiddly, it doesn't work on every pin, and it does nothing for video. For one important image it's worth trying. For a whole board, editing URLs by hand isn't realistic.</p>
+
+    <h2>Getting the original automatically</h2>
+    <p>A browser extension can skip all of that by requesting the original file directly. <a href="/">Revapin</a> pulls the full-resolution version of each pin, so you don't guess at URLs or settle for a thumbnail. You tick the pins you want and download them, and what lands on your computer is the real file rather than the preview.</p>
+    <figure aria-label="Pinterest image sizes in the URL">
+      <div class="d-flow">
+        <span class="d-node">/236x/</span>
+        <span class="d-arrow">→</span>
+        <span class="d-node">/564x/</span>
+        <span class="d-arrow">→</span>
+        <span class="d-chips"><span>/originals/</span></span>
+      </div>
+      <figcaption>Pinterest stores each image at several sizes; “originals” is the full file.</figcaption>
+    </figure>
+    <p>It's free to add, and it handles a whole board the same way it handles one pin.</p>
+    <p><a class="chrome-btn" href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M5 21h14"/></svg>Add to Chrome — Free</a></p>
+
+    <h2>When the difference actually shows</h2>
+    <p>A lot of this stays hidden on screen. A soft image looks acceptable on a webpage and in a small thumbnail. Print is where it breaks, along with anything you scale up in a design, like a texture stretched across a background or a photo cropped in tight. If the pin is only ever going to sit in another Pinterest board, the preview is fine. If it's going into real work, start from the original.</p>
+
+    <h2>Using the files</h2>
+    <p>Higher resolution doesn't change who owns the image. Full-size files are still the creator's work, so keep them for reference, credit where you can, and don't republish them as your own.</p>
+
+    <p>Most of the effort here comes down to avoiding the thumbnail. Open the pin, try the originals path, or let an extension grab the full file, and your saved images hold up when you actually use them.</p>
+
+    <p class="note" style="margin-top:26px">Revapin is not affiliated with, sponsored by, or endorsed by Pinterest. Pinterest is a trademark of Pinterest, Inc.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Reva Creative LLC · <a href="/">Home</a> · <a href="/blog">Blog</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/refund">Refund</a></div>
+</footer>
+
+<script>
+  (function(){ var t = localStorage.getItem('pg-theme'); if (t === 'light') document.documentElement.setAttribute('data-theme', t) })()
+</script>
+</body>
+</html>
