@@ -1,6 +1,6 @@
 :root{
   --bg:#0c0c0f; --bg2:#141417; --card:#16161a; --card2:#1d1d22;
-  --line:#26262c; --text:#f3f3f5; --muted:#9a9aa3; --red:#e60023; --maxw:720px;
+  --line:#26262c; --text:#f3f3f5; --muted:#9a9aa3; --red:#e60023; --maxw:900px;
 }
 :root[data-theme="light"]{
   --bg:#ffffff; --bg2:#f6f6f7; --card:#ffffff; --card2:#f3f3f5;
