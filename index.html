@@ -179,6 +179,12 @@
   .plan li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px}
   .plan li::before{content:"✓";color:var(--red);font-weight:800}
   .plan li.off{color:#6b6b73}.plan li.off::before{content:"–";color:#6b6b73}
+  /* pricing emphasis: free = neutral, paid = highlighted, yearly = strongest */
+  .plan.paid{border-color:rgba(230,0,35,.42);background:linear-gradient(180deg,rgba(230,0,35,.05),transparent)}
+  .plan.paid .tag{background:rgba(230,0,35,.14);color:var(--red);border-color:rgba(230,0,35,.3)}
+  .plan.pro{border-color:var(--red);background:linear-gradient(180deg,rgba(230,0,35,.12),transparent);
+    box-shadow:0 0 0 2px var(--red),0 26px 70px -24px rgba(230,0,35,.78)}
+  .spass{border-color:rgba(230,0,35,.42);background:linear-gradient(180deg,rgba(230,0,35,.05),transparent)}
   .plan .btn{justify-content:center;margin-top:auto}
 
   /* ===== faq ===== */
@@ -409,7 +415,7 @@
     <h2 style="margin-top:16px" data-i18n="price_h2">Pick how long you need it.</h2>
     <p class="lead" data-i18n="price_lead">Start free. Paid plans unlock everything, from $3.99.</p>
     <div class="price" style="text-align:left">
-      <div class="plan">
+      <div class="plan free">
         <h3 data-i18n="plan_free">Free</h3>
         <div class="amt">$0</div>
         <div class="per" data-i18n="per_free">No card · start instantly</div>
@@ -421,7 +427,7 @@
         </ul>
         <a class="btn btn-ghost" href="#install" data-i18n="btn_free">Add to Chrome</a>
       </div>
-      <div class="plan">
+      <div class="plan paid">
         <span class="tag" data-i18n="tag_popular">Popular</span>
         <h3 data-i18n="plan_1m">1 month</h3>
         <div class="amt">$9.99 <small data-i18n="lbl_1m">/ month</small></div>
