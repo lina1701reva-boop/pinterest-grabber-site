@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="/favicon-32.png" />
+<link rel="apple-touch-icon" href="/favicon-128.png" />
+<title>Blog — Revapin</title>
+<meta name="description" content="Practical guides and tips for getting more out of Pinterest — saving boards, building moodboards, and working faster." />
+<style>
+  :root{
+    --bg:#0c0c0f; --bg2:#141417; --card:#16161a; --card2:#1d1d22;
+    --line:#26262c; --text:#f3f3f5; --muted:#9a9aa3; --red:#e60023; --maxw:820px;
+  }
+  :root[data-theme="light"]{
+    --bg:#ffffff; --bg2:#f6f6f7; --card:#ffffff; --card2:#f3f3f5;
+    --line:#e7e7ea; --text:#15151a; --muted:#5e5e68;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;font-size:16px}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  header.nav{position:sticky;top:0;background:rgba(12,12,15,.8);backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);z-index:10}
+  [data-theme="light"] header.nav{background:rgba(255,255,255,.82)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px;color:var(--text);text-decoration:none;letter-spacing:-.02em}
+  .logo .mark{width:30px;height:30px}
+  .back{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+  .back:hover{color:var(--text)}
+  main{padding:48px 0 64px}
+  .eyebrow{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;letter-spacing:.04em;
+    text-transform:uppercase;color:var(--red);background:rgba(230,0,35,.10);padding:6px 12px;border-radius:30px}
+  h1{font-size:36px;letter-spacing:-.03em;margin:16px 0 6px}
+  .sub{color:var(--muted);font-size:18px;margin:0 0 34px}
+  .posts{display:grid;gap:16px}
+  .post-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;
+    text-decoration:none;color:var(--text);display:block;transition:border-color .15s ease,transform .12s ease}
+  .post-card:hover{border-color:var(--red);transform:translateY(-2px)}
+  .post-card .meta{color:var(--muted);font-size:13px;margin-bottom:6px}
+  .post-card h2{font-size:21px;margin:0 0 8px;letter-spacing:-.01em}
+  .post-card p{margin:0;color:var(--muted);font-size:15px}
+  footer{border-top:1px solid var(--line);margin-top:50px;padding:28px 0;color:var(--muted);font-size:13.5px;text-align:center}
+  footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="/">
+      <img class="mark" src="/logo.png" alt="Revapin" />
+      Revapin
+    </a>
+    <a class="back" href="/">← Back to Revapin</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <span class="eyebrow"><span>●</span> Blog</span>
+    <h1>The Revapin Blog</h1>
+    <p class="sub">Practical guides and tips for getting more out of Pinterest — saving boards, building moodboards, and working faster.</p>
+
+    <div class="posts">
+      <a class="post-card" href="/blog/how-to-download-pinterest-boards-pins-videos">
+        <div class="meta">Guide · July 1, 2026</div>
+        <h2>How to Download Pinterest Boards, Pins &amp; Videos (2026 Guide)</h2>
+        <p>Every way to get images and videos off Pinterest and onto your computer — from the slow manual method to whole boards in one click.</p>
+      </a>
+      <a class="post-card" href="/blog/pinterest-tips-for-designers-and-creators">
+        <div class="meta">Tips · July 1, 2026</div>
+        <h2>8 Pinterest Tips &amp; Tricks for Designers and Creators</h2>
+        <p>Small habits that make Pinterest a real work tool: cleaner boards, faster references, and moodboards you can actually hand to a client.</p>
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Reva Creative LLC · <a href="/">Home</a> · <a href="/blog">Blog</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/refund">Refund</a></div>
+</footer>
+
+<script>
+  (function(){ var t = localStorage.getItem('pg-theme'); if (t === 'light') document.documentElement.setAttribute('data-theme', t) })()
+</script>
+</body>
+</html>
