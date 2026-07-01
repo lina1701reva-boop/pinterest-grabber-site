@@ -10,7 +10,7 @@
 <style>
   :root{
     --bg:#0c0c0f; --bg2:#141417; --card:#16161a; --card2:#1d1d22;
-    --line:#26262c; --text:#f3f3f5; --muted:#9a9aa3; --red:#e60023; --maxw:820px;
+    --line:#26262c; --text:#f3f3f5; --muted:#9a9aa3; --red:#e60023; --maxw:900px;
   }
   :root[data-theme="light"]{
     --bg:#ffffff; --bg2:#f6f6f7; --card:#ffffff; --card2:#f3f3f5;
@@ -33,14 +33,20 @@
   .eyebrow{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;letter-spacing:.04em;
     text-transform:uppercase;color:var(--red);background:rgba(230,0,35,.10);padding:6px 12px;border-radius:30px}
   h1{font-size:36px;letter-spacing:-.03em;margin:16px 0 6px}
-  .sub{color:var(--muted);font-size:18px;margin:0 0 34px}
-  .posts{display:grid;gap:16px}
-  .post-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;
+  .sub{color:var(--muted);font-size:18px;margin:0 0 20px}
+  .group{margin-top:44px}
+  .group-title{font-size:23px;letter-spacing:-.02em;margin:0 0 4px}
+  .group-sub{color:var(--muted);font-size:14.5px;margin:0 0 18px}
+  .posts{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  @media (max-width:640px){ .posts{grid-template-columns:1fr} }
+  .post-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;
     text-decoration:none;color:var(--text);display:block;transition:border-color .15s ease,transform .12s ease}
   .post-card:hover{border-color:var(--red);transform:translateY(-2px)}
-  .post-card .meta{color:var(--muted);font-size:13px;margin-bottom:6px}
-  .post-card h2{font-size:21px;margin:0 0 8px;letter-spacing:-.01em}
-  .post-card p{margin:0;color:var(--muted);font-size:15px}
+  .post-card .meta{color:var(--muted);font-size:12.5px;margin-bottom:8px}
+  .tag{display:inline-block;background:rgba(230,0,35,.10);color:var(--red);font-weight:700;font-size:11px;
+    letter-spacing:.03em;text-transform:uppercase;padding:3px 9px;border-radius:20px;margin-right:9px;vertical-align:middle}
+  .post-card h2{font-size:18.5px;margin:0 0 7px;letter-spacing:-.01em;line-height:1.25}
+  .post-card p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.5}
   footer{border-top:1px solid var(--line);margin-top:50px;padding:28px 0;color:var(--muted);font-size:13.5px;text-align:center}
   footer a{color:var(--muted)}
 </style>
@@ -62,68 +68,86 @@
     <h1>The Revapin Blog</h1>
     <p class="sub">Practical guides and tips for getting more out of Pinterest — saving boards, building moodboards, and working faster.</p>
 
-    <div class="posts">
-      <a class="post-card" href="/blog/how-to-back-up-pinterest-boards">
-        <div class="meta">Guide · July 1, 2026</div>
-        <h2>How to Back Up Your Pinterest Boards</h2>
-        <p>Pins aren't permanent. Making a local copy of your boards before an account or a deleted pin takes them with it.</p>
-      </a>
-      <a class="post-card" href="/blog/how-to-clean-up-messy-pinterest-boards">
-        <div class="meta">Guide · July 1, 2026</div>
-        <h2>How to Clean Up Messy Pinterest Boards</h2>
-        <p>A board past a few hundred pins is hard to use. Splitting into sections, cutting dead weight, backing up first.</p>
-      </a>
-      <a class="post-card" href="/blog/pinterest-search-tips">
-        <div class="meta">Guide · July 1, 2026</div>
-        <h2>Pinterest Search Tips: Find Better References Faster</h2>
-        <p>Getting past the obvious results — filters, search within boards, and the More ideas button.</p>
-      </a>
-      <a class="post-card" href="/blog/pinterest-boards-vs-sections">
-        <div class="meta">Guide · July 1, 2026</div>
-        <h2>Pinterest Boards vs Sections: How to Organize Properly</h2>
-        <p>The difference between boards and sections, when to use each, and keeping a growing board usable.</p>
-      </a>
-      <a class="post-card" href="/blog/how-to-download-a-whole-pinterest-profile">
-        <div class="meta">Guide · July 1, 2026</div>
-        <h2>How to Download a Whole Pinterest Profile</h2>
-        <p>Want every board from a profile, not one at a time? Downloading an entire account with the structure kept intact.</p>
-      </a>
-      <a class="post-card" href="/blog/download-private-secret-pinterest-boards">
-        <div class="meta">Guide · July 1, 2026</div>
-        <h2>Can You Download Private or Secret Pinterest Boards?</h2>
-        <p>Yes for your own secret boards and any shared with you. Why it works, and what you can't reach.</p>
-      </a>
-      <a class="post-card" href="/blog/is-it-legal-to-download-pinterest-images">
-        <div class="meta">Guide · July 1, 2026</div>
-        <h2>Is It Legal to Download Pinterest Images?</h2>
-        <p>Saving for personal reference is generally fine. What matters legally is what you do with the file afterward.</p>
-      </a>
-      <a class="post-card" href="/blog/how-to-save-pinterest-images-full-quality">
-        <div class="meta">Guide · July 1, 2026</div>
-        <h2>How to Save Pinterest Images in Full Quality</h2>
-        <p>The images you save off Pinterest are usually shrunk previews. How to get the full-resolution original.</p>
-      </a>
-      <a class="post-card" href="/blog/pinterest-board-to-pdf-moodboard">
-        <div class="meta">Guide · July 1, 2026</div>
-        <h2>How to Turn a Pinterest Board into a PDF Moodboard</h2>
-        <p>Clients want a moodboard, not a Pinterest link. Turning a board into one shareable PDF you can send.</p>
-      </a>
-      <a class="post-card" href="/blog/how-to-save-pinterest-videos">
-        <div class="meta">Guide · July 1, 2026</div>
-        <h2>How to Save Pinterest Videos to Your Computer</h2>
-        <p>Pinterest has no download button for video pins. The methods that actually get you a clean MP4, and the ones that waste your time.</p>
-      </a>
-      <a class="post-card" href="/blog/how-to-download-pinterest-boards-pins-videos">
-        <div class="meta">Guide · July 1, 2026</div>
-        <h2>How to Download Pinterest Boards, Pins &amp; Videos (2026 Guide)</h2>
-        <p>Every way to get images and videos off Pinterest and onto your computer — from the slow manual method to whole boards in one click.</p>
-      </a>
-      <a class="post-card" href="/blog/pinterest-tips-for-designers-and-creators">
-        <div class="meta">Workflow · July 1, 2026</div>
-        <h2>Pinterest Workflow Tips for Designers, Illustrators, and Content Creators</h2>
-        <p>Keeping Pinterest useful for real work: boards you can navigate, faster references, and moodboards you can hand to a client.</p>
-      </a>
-    </div>
+    <section class="group">
+      <h2 class="group-title">Download &amp; Save from Pinterest</h2>
+      <p class="group-sub">Getting boards, pins, and videos off Pinterest and onto your computer.</p>
+      <div class="posts">
+        <a class="post-card" href="/blog/how-to-download-pinterest-boards-pins-videos">
+          <div class="meta"><span class="tag">Boards</span>Guide · July 1, 2026</div>
+          <h2>How to Download Pinterest Boards, Pins &amp; Videos (2026 Guide)</h2>
+          <p>Every way to get images and videos off Pinterest, from the slow manual method to whole boards in one click.</p>
+        </a>
+        <a class="post-card" href="/blog/how-to-save-pinterest-videos">
+          <div class="meta"><span class="tag">Videos</span>Guide · July 1, 2026</div>
+          <h2>How to Save Pinterest Videos to Your Computer</h2>
+          <p>Pinterest has no download button for video pins. The methods that get you a clean MP4, and the ones that don't.</p>
+        </a>
+        <a class="post-card" href="/blog/how-to-save-pinterest-images-full-quality">
+          <div class="meta"><span class="tag">Images</span>Guide · July 1, 2026</div>
+          <h2>How to Save Pinterest Images in Full Quality</h2>
+          <p>The images you save off Pinterest are usually shrunk previews. How to get the full-resolution original.</p>
+        </a>
+        <a class="post-card" href="/blog/how-to-download-a-whole-pinterest-profile">
+          <div class="meta"><span class="tag">Profiles</span>Guide · July 1, 2026</div>
+          <h2>How to Download a Whole Pinterest Profile</h2>
+          <p>Want every board from a profile, not one at a time? Downloading an entire account with the structure intact.</p>
+        </a>
+        <a class="post-card" href="/blog/download-private-secret-pinterest-boards">
+          <div class="meta"><span class="tag">Private boards</span>Guide · July 1, 2026</div>
+          <h2>Can You Download Private or Secret Pinterest Boards?</h2>
+          <p>Yes for your own secret boards and any shared with you. Why it works, and what you can't reach.</p>
+        </a>
+        <a class="post-card" href="/blog/how-to-back-up-pinterest-boards">
+          <div class="meta"><span class="tag">Backup</span>Guide · July 1, 2026</div>
+          <h2>How to Back Up Your Pinterest Boards</h2>
+          <p>Pins aren't permanent. Making a local copy before an account or a deleted pin takes them with it.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="group">
+      <h2 class="group-title">Organize &amp; Search Your Boards</h2>
+      <p class="group-sub">Keeping Pinterest tidy and finding what you need faster.</p>
+      <div class="posts">
+        <a class="post-card" href="/blog/pinterest-boards-vs-sections">
+          <div class="meta"><span class="tag">Organizing</span>Guide · July 1, 2026</div>
+          <h2>Pinterest Boards vs Sections: How to Organize Properly</h2>
+          <p>The difference between boards and sections, when to use each, and keeping a growing board usable.</p>
+        </a>
+        <a class="post-card" href="/blog/how-to-clean-up-messy-pinterest-boards">
+          <div class="meta"><span class="tag">Cleanup</span>Guide · July 1, 2026</div>
+          <h2>How to Clean Up Messy Pinterest Boards</h2>
+          <p>A board past a few hundred pins is hard to use. Splitting into sections, cutting dead weight, backing up first.</p>
+        </a>
+        <a class="post-card" href="/blog/pinterest-search-tips">
+          <div class="meta"><span class="tag">Search</span>Guide · July 1, 2026</div>
+          <h2>Pinterest Search Tips: Find Better References Faster</h2>
+          <p>Getting past the obvious results — filters, search within boards, and the More ideas button.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="group">
+      <h2 class="group-title">Moodboards, Workflow &amp; Good Practice</h2>
+      <p class="group-sub">Using Pinterest for real creative work, and staying on the right side of things.</p>
+      <div class="posts">
+        <a class="post-card" href="/blog/pinterest-board-to-pdf-moodboard">
+          <div class="meta"><span class="tag">Moodboards</span>Guide · July 1, 2026</div>
+          <h2>How to Turn a Pinterest Board into a PDF Moodboard</h2>
+          <p>Clients want a moodboard, not a Pinterest link. Turning a board into one shareable PDF you can send.</p>
+        </a>
+        <a class="post-card" href="/blog/pinterest-tips-for-designers-and-creators">
+          <div class="meta"><span class="tag">Workflow</span>Guide · July 1, 2026</div>
+          <h2>Pinterest Workflow Tips for Designers, Illustrators, and Content Creators</h2>
+          <p>Keeping Pinterest useful for real work: navigable boards, faster references, moodboards you can hand to a client.</p>
+        </a>
+        <a class="post-card" href="/blog/is-it-legal-to-download-pinterest-images">
+          <div class="meta"><span class="tag">Legal</span>Guide · July 1, 2026</div>
+          <h2>Is It Legal to Download Pinterest Images?</h2>
+          <p>Saving for personal reference is generally fine. What matters legally is what you do with the file afterward.</p>
+        </a>
+      </div>
+    </section>
   </div>
 </main>
 
