@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="icon" type="image/png" href="favicon-32.png" />
 <link rel="apple-touch-icon" href="favicon-128.png" />
-<title>Revapin — Save Pinterest boards the fast way</title>
+<title>Revapin — Download Pinterest Boards &amp; Pins with One Click</title>
 <meta name="description" content="Pick pins right on the Pinterest page and download them as a ZIP, folder, or PDF. Fast, local, no URL pasting. Works on private boards. HD images & video." />
 <style>
   /* ===== tokens ===== */
@@ -243,28 +243,11 @@
   [data-theme="light"] .f,[data-theme="light"] .step,
   [data-theme="light"] .plan,[data-theme="light"] details{box-shadow:0 2px 10px rgba(20,20,30,.05)}
 
-  /* ===== PINK THEME ===== */
-  :root[data-theme="pink"]{
-    --bg:#ead0da; --bg2:#f2e0e8; --card:#fbf4f7; --card2:#f3e2ea;
-    --line:#ddbccc; --text:#3a2230; --muted:#8a6275;
-    --red:#c24d7c; --red-d:#a83f68;
-  }
-  [data-theme="pink"] header.nav{background:rgba(234,208,218,.85)}
-  [data-theme="pink"] .pin{background:linear-gradient(160deg,#e3bccd,#f2dde6)}
-  [data-theme="pink"] .hero-grid{opacity:.6}
-  [data-theme="pink"] .video{background:radial-gradient(120% 120% at 50% 0,#f3d9e4,#ead0db);border-color:#ddbccc}
-  [data-theme="pink"] .video .vlabel b{color:#6e3b54}
-  [data-theme="pink"] .final{background:linear-gradient(180deg,#f0d4e0,#fbf4f7)}
-  [data-theme="pink"] .f,[data-theme="pink"] .step,
-  [data-theme="pink"] .plan,[data-theme="pink"] details{box-shadow:0 2px 12px rgba(150,60,100,.1)}
-
-  /* theme-toggle icon shows the CURRENT theme: moon=dark, sun=light, heart=pink */
+  /* theme-toggle icon shows the CURRENT theme: moon=dark, sun=light */
   .theme-btn svg{display:none}
   .theme-btn .i-moon{display:block}
   [data-theme="light"] .theme-btn .i-moon{display:none}
   [data-theme="light"] .theme-btn .i-sun{display:block}
-  [data-theme="pink"] .theme-btn .i-moon{display:none}
-  [data-theme="pink"] .theme-btn .i-heart{display:block}
 </style>
 </head>
 <body>
@@ -291,10 +274,9 @@
         </button>
         <div class="lang-menu" id="langMenu" hidden></div>
       </div>
-      <button id="themeToggle" class="theme-btn" type="button" aria-label="Switch theme" title="Theme: dark → light → pink">
+      <button id="themeToggle" class="theme-btn" type="button" aria-label="Switch theme" title="Theme: dark / light">
         <svg class="i-sun" viewBox="0 0 24 24"><path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0-5h0v3m0 14v3m9-10h-3M5 12H2m15.5-6.5l-2 2m-7 7l-2 2m11 0l-2-2m-7-7l-2-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         <svg class="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
-        <svg class="i-heart" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 8.9 2 5.5 5.2 5.5c1.9 0 3.2 1.1 3.8 2.1.6-1 1.9-2.1 3.8-2.1 3.2 0 4.6 3.4 3.2 6.3C19.5 16.4 12 21 12 21z"/></svg>
       </button>
       <a class="btn btn-red" href="#install">
         <svg viewBox="0 0 24 24" fill="#fff"><path d="M11 3h2v9.6l3.3-3.3 1.4 1.4L12 16.4 6.3 10.7l1.4-1.4L11 12.6V3zM5 18h14v2H5z"/></svg>
@@ -310,8 +292,8 @@
 <section class="hero">
   <div class="wrap hero-in">
     <span class="eyebrow"><span class="dot"></span> <span data-i18n="hero_eyebrow">Chrome extension · 100% in your browser</span></span>
-    <h1 data-i18n="hero_h1">Save Pinterest boards <span class="red">the fast way</span>.</h1>
-    <p class="lead" data-i18n="hero_lead">Tick the pins you want right on the page and download them as a ZIP, a folder, or a PDF. It all happens in your browser and saves straight to your computer.</p>
+    <h1 data-i18n="hero_h1">Download Pinterest Boards &amp; Pins with <span class="red">One Click</span></h1>
+    <p class="lead" data-i18n="hero_lead">Select the pins you want directly on the page and download them as a ZIP file, a folder, or a PDF. Everything runs in your browser and saves directly to your computer.</p>
     <div class="cta-row">
       <a class="btn btn-red" href="#install">
         <svg viewBox="0 0 24 24" fill="#fff"><path d="M11 3h2v9.6l3.3-3.3 1.4 1.4L12 16.4 6.3 10.7l1.4-1.4L11 12.6V3zM5 18h14v2H5z"/></svg>
@@ -557,10 +539,10 @@
 </footer>
 
 <script>
-  // Theme toggle: cycles dark → light → pink (default: dark). Remembers the choice.
+  // Theme toggle: cycles dark → light (default: dark). Remembers the choice.
   (function () {
     var root = document.documentElement
-    var THEMES = ['dark', 'light', 'pink']
+    var THEMES = ['dark', 'light']
     function apply(t) {
       if (t === 'dark') root.removeAttribute('data-theme')
       else root.setAttribute('data-theme', t)

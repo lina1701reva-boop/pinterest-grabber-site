@@ -16,10 +16,6 @@
     --bg:#ffffff; --bg2:#f6f6f7; --card:#ffffff; --card2:#f3f3f5;
     --line:#e7e7ea; --text:#15151a; --muted:#5e5e68;
   }
-  :root[data-theme="pink"]{
-    --bg:#ead0da; --bg2:#f2e0e8; --card:#fbf4f7; --card2:#f3e2ea;
-    --line:#ddbccc; --text:#3a2230; --muted:#8a6275; --red:#c24d7c;
-  }
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--text);
     font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
@@ -27,7 +23,7 @@
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
   header.nav{position:sticky;top:0;background:rgba(12,12,15,.8);backdrop-filter:blur(10px);
     border-bottom:1px solid var(--line);z-index:10}
-  [data-theme="light"] header.nav,[data-theme="pink"] header.nav{background:rgba(255,255,255,.82)}
+  [data-theme="light"] header.nav{background:rgba(255,255,255,.82)}
   .nav-in{display:flex;align-items:center;justify-content:space-between;height:62px}
   .logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px;color:var(--text);text-decoration:none;letter-spacing:-.02em}
   .logo .mark{width:30px;height:30px}
@@ -40,7 +36,6 @@
   h2{font-size:19px;margin:34px 0 8px;letter-spacing:-.01em}
   p,li{color:#d7d7dc}
   [data-theme="light"] p,[data-theme="light"] li{color:#33333a}
-  [data-theme="pink"] p,[data-theme="pink"] li{color:#4a2536}
   a{color:var(--red)}
   .lead{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:0 0 8px}
   .lead p{margin:0;color:var(--text)}
@@ -102,7 +97,7 @@
 </footer>
 
 <script>
-  (function(){ var t = localStorage.getItem('pg-theme'); if (t === 'light' || t === 'pink') document.documentElement.setAttribute('data-theme', t) })()
+  (function(){ var t = localStorage.getItem('pg-theme'); if (t === 'light') document.documentElement.setAttribute('data-theme', t) })()
 </script>
 </body>
 </html>
