@@ -37,6 +37,25 @@
   [data-theme="light"] p{color:#33333a}
   a{color:var(--red)}
   .lead{font-size:19px;color:var(--text);margin:14px 0 6px}
+  ul{padding-left:20px;margin:14px 0}
+  li{margin:6px 0;color:#d7d7dc}
+  [data-theme="light"] li{color:#33333a}
+  figure{margin:24px 0;text-align:center}
+  figcaption{color:var(--muted);font-size:13px;margin-top:10px}
+  .shot .bar{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:14px;background:#1f1f24;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+  .shot .grip{color:#8a8a92;font-size:15px;letter-spacing:-2px}
+  .shot .count{color:#cfcfd6;font-size:14px;font-weight:600}
+  .shot .b{display:inline-block;border-radius:9px;padding:8px 12px;font-size:13px;font-weight:600;color:#fff;background:rgba(255,255,255,.14)}
+  .shot .b.dl{background:#e60023}
+  .shot .b.clr{background:rgba(255,255,255,.10);color:#cfcfd6}
+  .d-flow{display:inline-flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center}
+  .d-node{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:9px 13px;font-size:14px;font-weight:600}
+  .d-arrow{color:var(--muted)}
+  .d-chips{display:inline-flex;gap:7px;flex-wrap:wrap;justify-content:center}
+  .d-chips span{background:rgba(230,0,35,.1);color:var(--red);border-radius:8px;padding:7px 11px;font-size:13px;font-weight:600}
+  .chrome-btn{display:inline-flex;align-items:center;gap:9px;background:var(--red);color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:13px 22px;border-radius:30px;margin-top:8px}
+  .chrome-btn:hover{background:#c8001f}
+  .chrome-btn svg{width:18px;height:18px}
   .note{color:var(--muted);font-size:14px}
   footer{border-top:1px solid var(--line);margin-top:46px;padding:28px 0;color:var(--muted);font-size:13.5px;text-align:center}
   footer a{color:var(--muted)}
@@ -67,7 +86,23 @@
     <p>You can right-click most pins and choose “Save image as.” Saving a handful this way is manageable. A board with a few hundred pins is a different matter, and it becomes dozens or hundreds of repetitive downloads, each with a cryptic filename. The files also arrive at whatever size Pinterest showed on the page, which is usually a smaller preview than the original.</p>
 
     <h2>Downloading many pins at once</h2>
-    <p>Browser extensions handle this by adding download controls directly inside Pinterest. <a href="/">Revapin</a> follows that approach. You tick the pins you want, or grab a whole board in one action, then choose whether to save them as a ZIP, a plain folder, or a single PDF. The files go to your Downloads folder at full resolution, and because everything runs in your browser, you're not pasting board links into a third-party site or uploading anything.</p>
+    <p>Browser extensions handle this by adding download controls directly inside Pinterest. <a href="/">Revapin</a> follows that approach: you tick the pins you want, or grab a whole board in one action, then pick how to save them.</p>
+    <ul>
+      <li>a ZIP archive, easiest for a big batch;</li>
+      <li>a plain folder of image files;</li>
+      <li>a single PDF, which doubles as a moodboard.</li>
+    </ul>
+    <p>Everything runs in your browser, so the files land in your Downloads folder at full resolution and nothing gets uploaded to another site.</p>
+    <figure class="shot" aria-label="Revapin toolbar on a Pinterest board">
+      <div class="bar">
+        <span class="grip">⠿</span>
+        <span class="count">6 selected</span>
+        <span class="b sel">Select ▾</span>
+        <span class="b dl">Download ▾</span>
+        <span class="b clr">Clear</span>
+      </div>
+      <figcaption>Revapin's toolbar sits on the Pinterest page. You tick pins and choose a format.</figcaption>
+    </figure>
 
     <h2>Videos and idea pins</h2>
     <p>Video pins work differently from images. Pinterest gives them no save button, and right-clicking leads nowhere useful, since the video streams in pieces rather than arriving as one file. Some extensions can pull the original video and hand it back as a usable MP4. Revapin treats a video pin the same as an image, so it comes down with everything else. Idea pins are their own thing, closer to a slideshow of separate pages, and each video page has to be pulled individually. There's a <a href="/blog/how-to-save-pinterest-videos">separate guide on saving Pinterest videos</a> if that's mostly what you're after.</p>
@@ -82,6 +117,7 @@
     <p>Downloading for your own reference is normal, though the images still belong to whoever made them. Keep saved pins for private inspiration, credit creators when you post something publicly, and don't pass someone else's work off as your own. If you're pulling material for client work, copyright matters more, and Pinterest's own terms are worth a read before you build a deliverable on top of borrowed content.</p>
 
     <p>Revapin lets you select pins right on the page and download boards, sections, images, and videos without leaving your browser. For anyone downloading from Pinterest regularly, it mostly saves you from repeating hundreds of manual saves.</p>
+    <p><a class="chrome-btn" href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M5 21h14"/></svg>Add to Chrome — Free</a></p>
 
     <p class="note" style="margin-top:26px">Revapin is not affiliated with, sponsored by, or endorsed by Pinterest. Pinterest is a trademark of Pinterest, Inc.</p>
   </div>

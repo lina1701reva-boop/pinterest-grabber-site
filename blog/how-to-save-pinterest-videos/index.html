@@ -37,6 +37,20 @@
   [data-theme="light"] p{color:#33333a}
   a{color:var(--red)}
   .lead{font-size:19px;color:var(--text);margin:14px 0 6px}
+  ul{padding-left:20px;margin:14px 0}
+  li{margin:6px 0;color:#d7d7dc}
+  [data-theme="light"] li{color:#33333a}
+  figure{margin:24px 0;text-align:center}
+  figcaption{color:var(--muted);font-size:13px;margin-top:10px}
+  .shot .bar{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:14px;background:#1f1f24;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+  .shot .grip{color:#8a8a92;font-size:15px;letter-spacing:-2px}
+  .shot .count{color:#cfcfd6;font-size:14px;font-weight:600}
+  .shot .b{display:inline-block;border-radius:9px;padding:8px 12px;font-size:13px;font-weight:600;color:#fff;background:rgba(255,255,255,.14)}
+  .shot .b.dl{background:#e60023}
+  .shot .b.clr{background:rgba(255,255,255,.10);color:#cfcfd6}
+  .chrome-btn{display:inline-flex;align-items:center;gap:9px;background:var(--red);color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:13px 22px;border-radius:30px;margin-top:8px}
+  .chrome-btn:hover{background:#c8001f}
+  .chrome-btn svg{width:18px;height:18px}
   .note{color:var(--muted);font-size:14px}
   footer{border-top:1px solid var(--line);margin-top:46px;padding:28px 0;color:var(--muted);font-size:13.5px;text-align:center}
   footer a{color:var(--muted)}
@@ -64,10 +78,26 @@
     <p>On most sites you can right-click a video and save it. Pinterest doesn't play along. The right-click menu gives you playback controls and, if you're lucky, “Copy video address,” but no save option. Even when you do copy an address, it usually points at a streaming playlist rather than a single file, so opening it in a new tab loads a wall of text or nothing at all. Pinterest serves its videos in pieces, the same way Netflix or YouTube do, which is why the old download trick stopped working a while ago.</p>
 
     <h2>Screen recording, and why it's a last resort</h2>
-    <p>Recording your screen while the video plays does capture something. QuickTime on a Mac or the Game Bar on Windows will both do it. The output tends to disappoint. You're filming a compressed video a second time, so it comes out softer than the original, and you have to trim the dead space at the start and end where you fumbled with the mouse. Any notification that pops up mid-recording lands in your clip. For a one-off it's passable. For anything you actually plan to reuse as a reference, the quality loss isn't worth the effort.</p>
+    <p>Recording your screen while the video plays does capture something. QuickTime on a Mac or the Game Bar on Windows will both do it. The output tends to disappoint, for a few reasons:</p>
+    <ul>
+      <li>you're filming a compressed video a second time, so it comes out softer than the original;</li>
+      <li>your cursor and any notification that appears mid-recording end up in the clip;</li>
+      <li>you have to trim the dead space at both ends by hand.</li>
+    </ul>
+    <p>For a one-off it's passable. For anything you plan to reuse as a reference, the quality loss isn't worth the effort.</p>
 
     <h2>The method that gives you the real file</h2>
     <p>A browser extension that runs inside Pinterest can reach the source video and hand you the actual MP4 at full quality, with no re-recording. You open the pin, click download, and the file lands in your Downloads folder. <a href="/">Revapin</a> works this way: it treats a video pin the same as an image pin, so ticking it and hitting download gives you a ready-to-use MP4 instead of a screen capture. Since it runs in your own browser, nothing gets uploaded and you never paste a link into some random site.</p>
+    <figure class="shot" aria-label="Revapin toolbar on a Pinterest board">
+      <div class="bar">
+        <span class="grip">⠿</span>
+        <span class="count">6 selected</span>
+        <span class="b sel">Select ▾</span>
+        <span class="b dl">Download ▾</span>
+        <span class="b clr">Clear</span>
+      </div>
+      <figcaption>The same toolbar handles video pins; ticking one saves it as an MP4.</figcaption>
+    </figure>
 
     <h2>Idea pins behave differently</h2>
     <p>Idea pins, the multi-page format Pinterest pushed for a stretch, aren't a single video. Each page can be its own clip, image, or text card, stacked into a small slideshow. If you want the moving parts, you're really after the individual video pages rather than one combined file. A tool that understands the format pulls each page separately. Screen-recording an idea pin usually means catching the whole sequence in one long take and cutting it apart afterward, which is more fiddly than it sounds.</p>
@@ -79,6 +109,7 @@
     <p>Downloading a video for your own reference is normal, though the clip still belongs to whoever made it. Keep saved videos for private inspiration, credit the creator if you end up sharing, and don't repost someone's work as your own. Pinterest's terms cover this too, which is worth respecting if you're pulling material for client work.</p>
 
     <p>If you save video from Pinterest with any regularity, an extension is by far the least painful option. Revapin handles video pins alongside <a href="/blog/how-to-download-pinterest-boards-pins-videos">whole boards and images</a>, so one tick-and-download flow covers everything you'd want off Pinterest.</p>
+    <p><a class="chrome-btn" href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M5 21h14"/></svg>Add to Chrome — Free</a></p>
 
     <p class="note" style="margin-top:26px">Revapin is not affiliated with, sponsored by, or endorsed by Pinterest. Pinterest is a trademark of Pinterest, Inc.</p>
   </div>

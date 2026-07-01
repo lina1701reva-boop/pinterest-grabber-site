@@ -37,6 +37,25 @@
   [data-theme="light"] p{color:#33333a}
   a{color:var(--red)}
   .lead{font-size:19px;color:var(--text);margin:14px 0 6px}
+  ul{padding-left:20px;margin:14px 0}
+  li{margin:6px 0;color:#d7d7dc}
+  [data-theme="light"] li{color:#33333a}
+  figure{margin:24px 0;text-align:center}
+  figcaption{color:var(--muted);font-size:13px;margin-top:10px}
+  .shot .bar{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:14px;background:#1f1f24;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+  .shot .grip{color:#8a8a92;font-size:15px;letter-spacing:-2px}
+  .shot .count{color:#cfcfd6;font-size:14px;font-weight:600}
+  .shot .b{display:inline-block;border-radius:9px;padding:8px 12px;font-size:13px;font-weight:600;color:#fff;background:rgba(255,255,255,.14)}
+  .shot .b.dl{background:#e60023}
+  .shot .b.clr{background:rgba(255,255,255,.10);color:#cfcfd6}
+  .d-flow{display:inline-flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center}
+  .d-node{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:9px 13px;font-size:14px;font-weight:600}
+  .d-arrow{color:var(--muted)}
+  .d-chips{display:inline-flex;gap:7px;flex-wrap:wrap;justify-content:center}
+  .d-chips span{background:rgba(230,0,35,.1);color:var(--red);border-radius:8px;padding:7px 11px;font-size:13px;font-weight:600}
+  .chrome-btn{display:inline-flex;align-items:center;gap:9px;background:var(--red);color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:13px 22px;border-radius:30px;margin-top:8px}
+  .chrome-btn:hover{background:#c8001f}
+  .chrome-btn svg{width:18px;height:18px}
   .note{color:var(--muted);font-size:14px}
   footer{border-top:1px solid var(--line);margin-top:46px;padding:28px 0;color:var(--muted);font-size:13.5px;text-align:center}
   footer a{color:var(--muted)}
@@ -61,7 +80,20 @@
     <p class="lead">Pinterest gets messy fast when you use it for real work. A hundred pins into a project, the board that was meant to help you is a wall of images you scroll past to find the one you actually wanted. A better setup saves a lot of that searching later, and most of it comes down to how you organize and what you do with pins once they're saved.</p>
 
     <h2>Organize by what you'll search for later</h2>
-    <p>Sections are the part most people skip, and they're what keeps a board usable past the first fifty pins. Name them by how you'll look for things, not by loose categories. For a branding project, separate logo references from color palettes and packaging examples, so when the client asks about packaging you're not scrolling past forty wordmarks to get there. For interiors, keep materials, lighting, furniture, and layout ideas in their own sections. It costs a couple of seconds each time you pin, and it turns a 300-pin board into something you can move around in.</p>
+    <p>Sections are the part most people skip, and they're what keeps a board usable past the first fifty pins. Name them by how you'll look for things, not by loose categories:</p>
+    <ul>
+      <li>a branding board: logos, color palettes, packaging, type;</li>
+      <li>an interiors board: materials, lighting, furniture, layout.</li>
+    </ul>
+    <p>With that in place, when a client asks about packaging you're not scrolling past forty wordmarks to find it. It costs a couple of seconds each time you pin, and it turns a 300-pin board into something you can move around in.</p>
+    <figure aria-label="Board sections become folders">
+      <div class="d-flow">
+        <span class="d-node">Board: “Brand — Acme”</span>
+        <span class="d-arrow">→</span>
+        <span class="d-chips"><span>Logos</span><span>Color</span><span>Packaging</span><span>Type</span></span>
+      </div>
+      <figcaption>Sections keep their names when you export, so the structure carries over to your folders.</figcaption>
+    </figure>
 
     <h2>Keep client work off your public profile</h2>
     <p>Secret boards don't appear on your profile or in anyone's feed, so that's where the messy early collecting belongs, especially for projects you can't show yet. You can gather forty rough directions, share the board with a collaborator, and no one sees the half you ended up cutting.</p>
@@ -82,6 +114,7 @@
     <p>Pins can disappear over time, accounts can be removed, and old source links often stop working, so a board you've relied on for years is less permanent than it feels. When it's important to your work, a local copy means one deleted pin doesn't quietly take a key reference with it.</p>
 
     <p>Revapin lets you save boards, sections, videos, and PDF moodboards directly from Pinterest, without leaving the browser. For anyone treating it as a work tool rather than a scrapbook, that tends to be the piece that's missing.</p>
+    <p><a class="chrome-btn" href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M5 21h14"/></svg>Add to Chrome — Free</a></p>
 
     <p class="note" style="margin-top:26px">Revapin is not affiliated with, sponsored by, or endorsed by Pinterest. Pinterest is a trademark of Pinterest, Inc.</p>
   </div>
