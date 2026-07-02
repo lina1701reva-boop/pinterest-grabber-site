@@ -62,8 +62,8 @@
   .btn svg{width:18px;height:18px}
 
   /* ===== nav ===== */
-  header.nav{position:sticky;top:0;z-index:50;background:rgba(10,10,11,.72);
-    backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  header.nav{position:sticky;top:0;z-index:50;background:var(--bg);
+    border-bottom:1px solid var(--line)}
   .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
   .logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px;letter-spacing:-.02em}
   .logo .mark{width:30px;height:30px}
@@ -132,7 +132,7 @@
   .f .ic{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;
     border-radius:15px;margin-bottom:14px;font-size:25px;line-height:1}
   .feat .f:nth-child(1) .ic{background:rgba(230,0,35,.12)}
-  .feat .f:nth-child(2) .ic{background:rgba(245,158,11,.15)}
+  .feat .f:nth-child(2) .ic{background:rgba(236,72,153,.16)}
   .feat .f:nth-child(3) .ic{background:rgba(234,179,8,.16)}
   .feat .f:nth-child(4) .ic{background:rgba(34,197,94,.15)}
   .feat .f:nth-child(5) .ic{background:rgba(139,92,246,.16)}
@@ -256,7 +256,7 @@
     --bg:#ffffff; --bg2:#f6f6f7; --card:#ffffff; --card2:#f3f3f5;
     --line:#e7e7ea; --text:#15151a; --muted:#5e5e68;
   }
-  [data-theme="light"] header.nav{background:rgba(255,255,255,.8)}
+  [data-theme="light"] header.nav{background:#ffffff}
   [data-theme="light"] .pin{background:linear-gradient(160deg,#e9e9ef,#f6f6f9)}
   [data-theme="light"] .hero-grid{opacity:.55}
   [data-theme="light"] .video{background:radial-gradient(120% 120% at 50% 0,#f3f3f6,#eaeaee);border-color:#d4d4db}
