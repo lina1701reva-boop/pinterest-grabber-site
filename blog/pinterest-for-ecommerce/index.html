@@ -8,18 +8,37 @@
 <title>Pinterest for E-commerce: How to Turn Pins into Sales — Revapin</title>
 <meta name="description" content="Pinterest reaches shoppers in a buying mindset. How an online store can turn pins into product-page traffic and sales." />
 <link rel="stylesheet" href="/blog/style.css" />
+  <link rel="stylesheet" href="/nav.css" />
 </head>
 <body>
 <header class="nav">
   <div class="wrap nav-in">
     <a class="logo" href="/"><img class="mark" src="/logo.png" alt="Revapin" />Revapin</a>
     <nav class="nav-links">
-      <a href="/#how">How it works</a>
-      <a href="/#pricing">Pricing</a>
-      <a href="/faq">FAQ</a>
-      <a href="/blog">Blog</a>
-      <a class="nav-cta" href="/">Add to Chrome</a>
+      <a href="/#how" data-i18n="nav_how">How it works</a>
+      <a href="/#pricing" data-i18n="nav_pricing">Pricing</a>
+      <a href="/faq" data-i18n="nav_faq">FAQ</a>
+      <a href="/blog" data-i18n="nav_blog">Blog</a>
+      <a href="/privacy" data-i18n="nav_privacy">Privacy</a>
+      <a href="/terms" data-i18n="nav_terms">Terms</a>
+      <a href="/refund" data-i18n="nav_refund">Refund</a>
     </nav>
+    <div class="nav-right">
+      <div class="lang" id="lang">
+        <button class="lang-btn" id="langBtn" type="button" aria-label="Language" aria-haspopup="true">
+          <span class="fl" id="langFlag">🇺🇸</span><span id="langCode">EN</span><span class="chev">▾</span>
+        </button>
+        <div class="lang-menu" id="langMenu" hidden></div>
+      </div>
+      <button id="themeToggle" class="theme-btn" type="button" aria-label="Switch theme" title="Theme: dark / light">
+        <svg class="i-sun" viewBox="0 0 24 24"><path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0-5h0v3m0 14v3m9-10h-3M5 12H2m15.5-6.5l-2 2m-7 7l-2 2m11 0l-2-2m-7-7l-2-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+      </button>
+      <a class="btn btn-red" href="/#install">
+        <svg viewBox="0 0 24 24" fill="#fff"><path d="M11 3h2v9.6l3.3-3.3 1.4 1.4L12 16.4 6.3 10.7l1.4-1.4L11 12.6V3zM5 18h14v2H5z"/></svg>
+        <span data-i18n="nav_add">Add to Chrome</span>
+      </a>
+    </div>
   </div>
 </header>
 <main>
@@ -60,5 +79,6 @@
 </main>
 <footer><div class="wrap">© 2026 Reva Creative LLC · <a href="/">Home</a> · <a href="/blog">Blog</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/refund">Refund</a></div></footer>
 <script>(function(){ var t = localStorage.getItem('pg-theme'); if (t === 'light') document.documentElement.setAttribute('data-theme', t) })()</script>
+<script src="/nav.js"></script>
 </body>
 </html>
